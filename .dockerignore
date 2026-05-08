@@ -1,16 +1,54 @@
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.db
-*.log
-*.sqlite
-*.sqlite3
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment files
 .env
-env
-.venv
-venv
-.git
+
+# Git
+.git/
 .gitignore
-.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
 logfile.txt
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Streamlit cache
+.streamlit/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Mypy / Ruff / tooling
+.mypy_cache/
+.ruff_cache/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
