@@ -110,6 +110,13 @@ DEBUG=False
 streamlit run src/app.py
 ```
 
+Alternatively run via Docker
+
+```bash
+docker build -t pdf-chat .
+docker run -p 8501:8501 --env-file .env pdf-chat
+```
+
 ### Workflow
 
 1. Upload PDF files
