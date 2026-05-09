@@ -17,6 +17,7 @@ class PDFChat:
     None
         State is managed via Streamlit session_state.
     """
+
     def __init__(self):
         """
         Initialize Streamlit UI and session state.

@@ -38,6 +38,7 @@ class Engine:
     chat_engine : object or None
         Chat engine instance created after ingestion.
     """
+
     def __init__(self):
         """
         Initialize engine components.
@@ -49,8 +50,7 @@ class Engine:
         self.llm = OpenAI(model=settings.openai_model, api_key=settings.openai_api_key)
 
         LlamaSettings.embed_model = OpenAIEmbedding(
-            api_key=settings.openai_api_key,
-            embed_batch_size=settings.embed_batch_size
+            api_key=settings.openai_api_key, embed_batch_size=settings.embed_batch_size
         )
 
         self.loader = PDFReader()

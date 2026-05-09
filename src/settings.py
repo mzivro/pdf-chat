@@ -34,6 +34,7 @@ class Settings(BaseSettings):
     ValueError
         If any configuration parameter is invalid.
     """
+
     openai_api_key: str
     openai_model: str = "gpt-4.1-mini"
     chunk_size: int = 512
@@ -207,6 +208,7 @@ class Settings(BaseSettings):
         if self.chunk_overlap >= self.chunk_size:
             raise ValueError("CHUNK_OVERLAP must be smaller than CHUNK_SIZE")
         return self
+
 
 try:
     settings = Settings()

@@ -13,6 +13,7 @@ class Logger:
     enabled : bool
         Flag controlling whether logging is active.
     """
+
     def __init__(self):
         """
         Initialize logger.
